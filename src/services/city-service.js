@@ -1,9 +1,9 @@
 //const { response } = require('express');
-const {cityRepository} = require('../repository/index')
+const {CityRepository} = require('../repository/index')
 
-class cityService{
+class CityService{
     constructor() {
-        this.cityRepository = new cityRepository();
+        this.cityRepository = new CityRepository();
     }
 
     async createCity(data) {
@@ -49,4 +49,4 @@ class cityService{
     }
 }
 
-module.exports = cityService;
+module.exports = CityService;
