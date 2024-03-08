@@ -11,7 +11,7 @@ class CityService{
             const city = await this.cityRepository.createCity(data);
             return city;
         } catch (error) {
-            console.log("Something wwent wrong at service layer");
+            console.log("Something went wrong at service layer");
             throw {error}
         }
     }
@@ -21,7 +21,7 @@ class CityService{
             const response = await this.cityRepository.deleteCity(cityId);
             return response;
         } catch (error) {
-            console.log("Something wwent wrong at service layer");
+            console.log("Something went wrong at service layer");
             throw {error}
         }
 
@@ -32,7 +32,7 @@ class CityService{
             const city = await this.cityRepository.updateCity(cityId, data);
             return city;
         } catch (error) {
-            console.log("Something wwent wrong at service layer");
+            console.log("Something went wrong at service layer");
             throw {error}
         }
 
@@ -43,7 +43,7 @@ class CityService{
             const city = await this.cityRepository.getCity(cityId);
             return city;
         } catch (error) {
-            console.log("Something wwent wrong at service layer");
+            console.log("Something went wrong at service layer");
             throw {error}
         }
     }
